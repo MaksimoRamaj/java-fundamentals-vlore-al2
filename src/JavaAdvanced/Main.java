@@ -96,6 +96,18 @@ public class Main {
         vehicle.pressTheBrakes();
         vehicle.stopEngine();
 
+        System.out.println("Give figure base length");
+        int len= sc.nextInt();
+
+        System.out.println("Give figure height length");
+        int height= sc.nextInt();
+
+        Triangle triangle= new Triangle(len, height);
+        triangle.area();
+
+        Rectangle rectangle= new Rectangle(len, height);
+        rectangle.area();
+
     }
 
 }
