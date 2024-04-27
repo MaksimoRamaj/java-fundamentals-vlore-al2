@@ -19,11 +19,12 @@ public class Demo {
                 kushti = false;
             } else if (guessNumber < generatedNumber) {
                 System.out.println("Not enough!");
-            }else if (guessNumber > generatedNumber){
+                System.out.println("Jep serisht numrin: ");
+                guessNumber = scanner.nextInt();
+            }else{
                 System.out.println("To much!");
-            }else {
-            System.out.println("Jep serisht numrin: ");
-            guessNumber = scanner.nextInt();
+                System.out.println("Jep serisht numrin: ");
+                guessNumber = scanner.nextInt();
             }
         }while (kushti);
     }
